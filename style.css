@@ -30,6 +30,12 @@ border-left: 4px solid black;
 border-right: 4px solid black;
 
 .container {
-display: grid;
-display: inline-grid;
+display: grid/inline-grid;
+        row-gap/column-gap: 50px; / gap: 50px 100px;
 }
+.item1 {
+  grid-column-start: 1;   grid-row-start: 1;
+  grid-column-end: 3;   grid-row-end: 3;
+}
+
+
