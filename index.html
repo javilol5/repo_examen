@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabla de divs</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Dias lectivos en un mes de febrero prefecto</h1>
     <div>
         <div>
             <div>Lunes</div>
@@ -23,7 +24,33 @@
         </div>
     </div>
     <div class="container">
-  <div>1</div>
-</div>
+        <div>1</div>
+    </div>
+    <div class="container">
+        <form action="publicarLibro.php" method="POST">
+            <label for="titulo">Título del libro:</label>
+            <input type="text" id="titulo" name="titulo" required>
+            <label for="autor">Autor:</label>
+            <input type="text" id="autor" name="autor" required>
+            <label for="categoria">Categoría:</label>
+            <select id="categoria" name="categoria" required>
+                <option value=""></option>
+                <option value="arte">Arte</option>
+            </select>
+            <label for="fecha">Fecha de inicio de lectura:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label>Marcas sobre el libro:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="leido" name="leido" value="1">
+                <label for="leido">Leído</label>
+                <input type="checkbox" id="favorito" name="favorito" value="1">
+                <label for="favorito">Favorito</label>
+            </div>
+
+            <button type="submit">Publicar</button>
+        </form>
+    </div>
 </body>
+
 </html>
