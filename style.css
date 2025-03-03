@@ -24,3 +24,7 @@ body > div > div > div {
     padding: 10px;
     border: 1px solid black;
 }
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+border-left: 4px solid black;
+border-right: 4px solid black;
