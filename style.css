@@ -1,1 +1,26 @@
-
+body > div {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    border: 2px solid black;
+    margin: 20px auto;
+}
+body > div > div {
+    display: flex;
+}
+body > div > div:first-child {
+    background-color: rgba(0, 0, 255, 0.696);
+    color: white;
+    font-weight: bold;
+}
+body > div > div:nth-child(even) {
+    background-color: #77ff77;
+}
+body > div > div:nth-child(odd):not(:first-child) {
+    background-color: #00ff00;
+}
+body > div > div > div {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid black;
+}
