@@ -30,5 +30,6 @@ border-left: 4px solid black;
 border-right: 4px solid black;
 
 .container {
-  display: grid;
+display: grid;
+display: inline-grid;
 }
